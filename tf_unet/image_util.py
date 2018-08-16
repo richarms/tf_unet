@@ -150,9 +150,9 @@ class FitsDataProvider(BaseDataProvider):
 
     """
 
-    def __init__(self, search_path, a_min=None, a_max=None, data_suffix="_image.fits", mask_suffix='_mask.fits',
+    def __init__(self, search_path, a_min=None, a_max=None, data_suffix="image.fits", mask_suffix='mask.fits',
                  shuffle_data=True, n_class=2):
-        super(ImageDataProvider, self).__init__(a_min, a_max)
+        super(FitsDataProvider, self).__init__(a_min, a_max)
         self.data_suffix = data_suffix
         self.mask_suffix = mask_suffix
         self.file_idx = -1
